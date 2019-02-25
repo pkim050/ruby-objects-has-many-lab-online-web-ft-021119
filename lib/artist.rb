@@ -14,4 +14,7 @@ class Artist
     song = Artist.new(name)
     @songs << song
   end
+  
+  def self.count
+    
 end
