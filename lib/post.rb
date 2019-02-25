@@ -17,7 +17,7 @@ class Post
   end
   
   def author_name
-    binding.pry
+    #binding.pry
     return self.author.name if self.author != nil
     return nil
   end
