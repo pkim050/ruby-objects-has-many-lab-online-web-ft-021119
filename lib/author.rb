@@ -15,4 +15,5 @@ class Author
     class_post = Post.new(post_title)
     @posts << class_post
     class_post.author = self
+  end
 end
