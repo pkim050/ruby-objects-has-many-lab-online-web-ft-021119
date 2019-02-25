@@ -17,4 +17,8 @@ class Artist
     @songs << class_song
     class_song.artist = self
   end
+  
+  def self.song_count
+    binding.pry
+  end
 end
