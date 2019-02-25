@@ -17,12 +17,12 @@ class Artist
     song = Song.new(name)
     @songs << song
     song.artist = self
-    #binding.pry
+    binding.pry
   end
   
   def self.song_count
     count = 0
-    binding.pry
+    #binding.pry
     @songs.each {|element| count += 1}
   end
 end
