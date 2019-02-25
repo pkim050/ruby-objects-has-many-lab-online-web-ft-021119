@@ -23,7 +23,7 @@ class Artist
   
   def self.song_count
     count = 0
-    binding.pry
+    #binding.pry
     @songs.each {|element| count += 1}
   end
 end
