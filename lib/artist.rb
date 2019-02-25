@@ -7,9 +7,13 @@ class Artist
     @songs = []
   end
   
-  def add_song(song_name)
-    @songs << song_name
-    song_name.artist = self
-    binding.pry
+  def add_song(class_song)
+    @songs << class_song
+    class_song.artist = self
   end
+  
+  def add_song_by_name(song_name)
+    class_song = Song.new(song_name)
+    @songs << class_song
+    class_song.artist = self
 end
