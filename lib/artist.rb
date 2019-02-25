@@ -17,10 +17,10 @@ class Artist
     song = Song.new(name)
     @songs << song
     song.artist = self
-    binding.pry
+    #binding.pry
   end
   
-  def song_count
+  def self.song_count
     self.count
   end
 end
