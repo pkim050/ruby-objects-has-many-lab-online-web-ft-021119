@@ -9,16 +9,14 @@ class Artist
   
   def add_song(name) # Adds a song by name, push back the name of the song to an array. song_name.artist = Artist
     #binding.pry
-    @songs << name
     name.artist = self
-    @songs
+    @songs << name
   end
   
   def add_song_by_name(name) # Create a new class Song with a song name. Push back the class Song onto the array. Class song.artist = Artist
     song = Song.new(name)
-    @songs << song
     song.artist = self
-    @songs
+    @songs << song
   end
   
   def self.song_count
