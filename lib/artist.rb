@@ -21,6 +21,7 @@ class Artist
   end
   
   def self.song_count
-    self.count
+    count = 0
+    @songs.each {|element| count += 1}
   end
 end
